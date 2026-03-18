@@ -3,6 +3,7 @@
 require_once __DIR__ . '/../Controller.php';
 require_once __DIR__ . '/../models/Evento.php';
 require_once __DIR__ . '/../models/Inscricao.php';
+require_once __DIR__ . '/../models/Evento.php';
 
 class EventoController extends Controller
 {
@@ -103,4 +104,5 @@ class EventoController extends Controller
             'participantes' => $participantes,
         ]);
     }
+
 }

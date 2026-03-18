@@ -7,7 +7,7 @@
 </div>
 
 <?php if ($inscritos >= (int)$evento['capacidade']): ?>
-    <div class="alert">Este evento já atingiu a capacidade máxima de <?= (int)$evento['capacidade'] ?> participantes.</div>
+    <div class="alert">Evento cheio. CAPACIDADE: <?= (int)$evento['capacidade'] ?> participantes.</div>
 <?php endif; ?>
 
 <form method="post" action="index.php?controller=inscricao&action=store">
@@ -24,4 +24,4 @@
     <button class="btn btn-primary" type="submit" <?= $inscritos >= (int)$evento['capacidade'] ? 'disabled' : '' ?>>Inscrever</button>
 </form>
 
-<?php require __DIR__ . '/../partials/footer.php'; ?>
+

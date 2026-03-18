@@ -4,11 +4,20 @@
 
 <div style="margin-bottom: 1rem;">
     <a class="btn btn-primary" href="index.php?controller=inscricao&action=create&evento_id=<?= $evento['id'] ?>">Inscrever participante</a>
-    <a class="btn btn-secondary" href="index.php?controller=evento&action=index">Voltar para eventos</a>
+    <a class="btn btn-secondary" href="index.php?controller=evento&action=index">Voltar</a>
 </div>
 
+<?php $totalParticipantes = count($participantes); ?>
+
+<div class="alert">
+    <?= $totalParticipantes ?> participante<?= $totalParticipantes != 1 ? 's' : '' ?>
+</div>
+
+<?php if ($totalParticipantes > 0): ?>
+
+
 <?php if (empty($participantes)): ?>
-    <div class="alert">Nenhum participante inscrito neste evento.</div>
+    <div class="alert">Nenhum.</div>
 <?php else: ?>
     <table>
         <thead>
@@ -34,4 +43,6 @@
     </table>
 <?php endif; ?>
 
-<?php require __DIR__ . '/../partials/footer.php'; ?>
+<?php else: ?>
+    <p>Nenhum participante inscrito neste evento.</p>
+<?php endif; ?>

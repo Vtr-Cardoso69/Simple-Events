@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gestão de Eventos</title>
+    <title>Sistema de Eventos</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
         .container { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
@@ -29,7 +29,7 @@
 <body>
 <header>
     <div class="container">
-        <h1>Gestão de Eventos</h1>
+        <h1>Sistema de Eventos</h1>
         <nav>
             <a href="index.php?controller=evento&action=index">Eventos</a>
             <a href="index.php?controller=participante&action=index">Participantes</a>

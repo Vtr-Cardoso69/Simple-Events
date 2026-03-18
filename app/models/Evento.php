@@ -64,10 +64,4 @@ class Evento
         return $stmt->execute(['id' => $id]);
     }
 
-    public function countInscricoes(int $eventoId): int
-    {
-        $stmt = $this->db->prepare('SELECT COUNT(*) FROM inscricoes WHERE evento_id = :evento_id');
-        $stmt->execute(['evento_id' => $eventoId]);
-        return (int)$stmt->fetchColumn();
-    }
 }

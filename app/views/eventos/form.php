@@ -34,4 +34,4 @@ $formAction = $action === 'store' ? 'store' : 'update';
     <a class="btn btn-secondary" href="index.php?controller=evento&action=index">Voltar</a>
 </form>
 
-<?php require __DIR__ . '/../partials/footer.php'; ?>
+

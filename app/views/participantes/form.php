@@ -7,8 +7,11 @@ $formAction = $action === 'store' ? 'store' : 'update';
 
 <h2><?= $isEdit ? 'Editar participante' : 'Cadastrar participante' ?></h2>
 
+<!-- IMPORTANTE -->
 <form method="post" action="index.php?controller=participante&action=<?= $formAction ?>">
-    <?php if ($isEdit): ?>
+<!-- IMPORTANTE -->
+ 
+<?php if ($isEdit): ?>
         <input type="hidden" name="id" value="<?= (int)$participante['id'] ?>">
     <?php endif; ?>
 
@@ -25,4 +28,4 @@ $formAction = $action === 'store' ? 'store' : 'update';
     <a class="btn btn-secondary" href="index.php?controller=participante&action=index">Voltar</a>
 </form>
 
-<?php require __DIR__ . '/../partials/footer.php'; ?>
+

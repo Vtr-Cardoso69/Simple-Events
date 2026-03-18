@@ -32,6 +32,7 @@ class ParticipanteController extends Controller
         $this->redirect('index.php?controller=participante&action=index');
     }
 
+    // IMPORTANTE !!!!!!!! IMPORTANTE //
     public function edit(): void
     {
         $id = (int)($_GET['id'] ?? 0);
@@ -46,6 +47,7 @@ class ParticipanteController extends Controller
 
         $this->view('participantes/form', ['participante' => $participante, 'action' => 'update']);
     }
+        // IMPORTANTE !!!!!!!! IMPORTANTE //
 
     public function update(): void
     {
